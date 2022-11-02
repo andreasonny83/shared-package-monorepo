@@ -1,0 +1,16 @@
+{
+  "name": "shared-package-monorepo",
+  "description": "Template for setting up a Monorepo with an internal shared package",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "pnpm run -r clean",
+    "build": "pnpm run -r build"
+  },
+  "devDependencies": {
+    "tsc-alias": "^1.7.0",
+    "typescript": "~4.7.0"
+  }
+}
